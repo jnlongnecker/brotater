@@ -1,0 +1,272 @@
+{
+    "master_list": [
+        "Well Rounded",
+        "Brawler",
+        "Crazy",
+        "Ranger",
+        "Mage",
+        "Chunky",
+        "Old",
+        "Lucky",
+        "Mutant",
+        "Generalist",
+        "Loud",
+        "Multitasker",
+        "Wildling",
+        "Pacifist",
+        "Gladiator",
+        "Saver",
+        "Sick",
+        "Farmer",
+        "Ghost",
+        "Speedy",
+        "Entrepreneur",
+        "Engineer",
+        "Explorer",
+        "Doctor",
+        "Hunter",
+        "Artificer",
+        "Arms Dealer",
+        "Streamer",
+        "Cyborg",
+        "Glutton",
+        "Jack",
+        "Lich",
+        "Apprentice",
+        "Cryptid",
+        "Fisherman",
+        "Golem",
+        "King",
+        "Renegade",
+        "One Armed",
+        "Bull",
+        "Soldier",
+        "Masochist",
+        "Knight",
+        "Demon"
+    ],
+    "completed": [],
+    "current": "",
+    "stats": {
+        "Well Rounded": {
+            "img": "images/WellRounded.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Brawler": {
+            "img": "images/Brawler.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Crazy": {
+            "img": "images/Crazy.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Ranger": {
+            "img": "images/Ranger.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Mage": {
+            "img": "images/Mage.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Chunky": {
+            "img": "images/Chunky.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Old": {
+            "img": "images/Old.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Lucky": {
+            "img": "images/Lucky.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Mutant": {
+            "img": "images/Mutant.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Generalist": {
+            "img": "images/Generalist.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Loud": {
+            "img": "images/Loud.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Multitasker": {
+            "img": "images/Multitasker.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Wildling": {
+            "img": "images/Wildling.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Pacifist": {
+            "img": "images/Pacifist.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Gladiator": {
+            "img": "images/Gladiator.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Saver": {
+            "img": "images/Saver.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Sick": {
+            "img": "images/Sick.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Farmer": {
+            "img": "images/Farmer.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Ghost": {
+            "img": "images/Ghost.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Speedy": {
+            "img": "images/Speedy.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Entrepreneur": {
+            "img": "images/Entrepreneur.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Engineer": {
+            "img": "images/Engineer.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Explorer": {
+            "img": "images/Explorer.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Doctor": {
+            "img": "images/Doctor.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Hunter": {
+            "img": "images/Hunter.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Artificer": {
+            "img": "images/Artificer.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Arms Dealer": {
+            "img": "images/ArmsDealer.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Streamer": {
+            "img": "images/Streamer.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Cyborg": {
+            "img": "images/Cyborg.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Glutton": {
+            "img": "images/Glutton.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Jack": {
+            "img": "images/Jack.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Lich": {
+            "img": "images/Lich.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Apprentice": {
+            "img": "images/Apprentice.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Cryptid": {
+            "img": "images/Cryptid.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Fisherman": {
+            "img": "images/Fisherman.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Golem": {
+            "img": "images/Golem.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "King": {
+            "img": "images/King.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Renegade": {
+            "img": "images/Renegade.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "One Armed": {
+            "img": "images/OneArmed.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Bull": {
+            "img": "images/Bull.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Soldier": {
+            "img": "images/Soldier.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Masochist": {
+            "img": "images/Masochist.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Knight": {
+            "img": "images/Knight.png",
+            "wins": 0,
+            "losses": 0
+        },
+        "Demon": {
+            "img": "images/Demon.png",
+            "wins": 0,
+            "losses": 0
+        }
+    }
+}
