@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../scripts/controller.js"></script>
+    <link rel="stylesheet" href="../styles/common.css">
+    <link rel="stylesheet" href="../styles/controller.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="grid-container incomplete">
+            <p class="grid-header incomplete">To-Do</p>
+            <div id="unpicked-grid" class="char-grid"></div>
+        </div>
+        <div id="center">
+            <div id="curr-tater">
+                <div class="current"></div>
+            </div>
+            <div class="results">
+                <button class="hide" id="win">Win</button>
+                <button class="hide" id="random">Randomize</button>
+                <button class="hide" id="lose">Lose</button>
+            </div>
+        </div>
+        <div class="grid-container complete">
+            <p class="grid-header complete">Completed</p>
+            <div id="picked-grid" class="char-grid"></div>
+        </div>
+    </div>
+</body>
+
+</html>

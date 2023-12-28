@@ -1,0 +1,160 @@
+@property --anim-angle {
+    syntax: "<angle>";
+    inherits: false;
+    initial-value: 45deg;
+}
+
+@property --shadow-size {
+    syntax: "<length-percentage>";
+    inherits: false;
+    initial-value: 3px;
+}
+
+@property --shadow-reduce {
+    syntax: "<length-percentage>";
+    inherits: false;
+    initial-value: 0px;
+}
+
+@keyframes rainbow-turn {
+    0% {
+        --anim-angle: 45deg;
+    }
+    100% {
+        --anim-angle: 405deg;
+    }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 0;
+    padding: 1rem;
+}
+
+.char-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+    padding: 0.5rem;
+}
+
+.token {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    border-radius: 5px;
+    box-shadow: 0px 2px 3px 0px #000;
+    padding: 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+.current {
+    height: 65vh;
+    color: #f8f8f2;
+}
+
+.no-tater {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.tater-text {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.grid-container {
+    height: 90vh;
+    overflow-y: auto;
+    border-radius: 5px;
+}
+
+.grid-container {
+    -ms-overflow-style: none; /* Internet Explorer 10+ */
+    scrollbar-width: none; /* Firefox */
+}
+.grid-container::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.grid-header {
+    position: sticky;
+    text-align: center;
+    padding: 0.25rem 0;
+    box-shadow: 0 1px 1px 1px;
+    margin: 0;
+    top: 0px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.incomplete {
+    background-color: #ffb86c;
+}
+
+.complete {
+    background-color: #8be9fd;
+}
+
+/************** BUTTONS *************/
+
+button {
+    --shadow-size: 3px;
+    --shadow-reduce: 0px;
+    min-width: 33%;
+    padding: 0.5rem 0;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 calc(var(--shadow-size) - var(--shadow-reduce)) 0 0 #f8f8f2;
+    transform: translateY(var(--shadow-reduce));
+    transition: --shadow-reduce 0.125s;
+}
+
+button:hover {
+    cursor: pointer;
+    --shadow-reduce: 3px;
+    transition: --shadow-reduce 0.125s;
+}
+
+.results {
+    display: flex;
+    margin-top: 2rem;
+    justify-content: center;
+    gap: 20%;
+}
+
+#random {
+    --anim-angle: 45deg;
+    background-image: linear-gradient(
+        var(--anim-angle),
+        #6272a4,
+        #bd93f9,
+        #ff79c6,
+        #ff5555,
+        #ffb86c,
+        #f1fa8c,
+        #50fa7b
+    );
+}
+
+#random:hover {
+    color: #44475a;
+    animation: 1.5s infinite forwards linear rainbow-turn;
+}
+
+#win {
+    background-color: #50fa7b;
+}
+
+#lose {
+    background-color: #ff5555;
+}
