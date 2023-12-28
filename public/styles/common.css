@@ -93,6 +93,7 @@
     top: 0px;
     font-size: 1.5rem;
     font-weight: bold;
+    z-index: 10;
 }
 
 .incomplete {
@@ -101,6 +102,18 @@
 
 .complete {
     background-color: #8be9fd;
+}
+
+.clickable:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transform: translateY(1px);
+}
+
+.clickable + .selected {
+    background-color: #8be9fd;
+    box-shadow: none;
+    transform: translateY(1px);
 }
 
 /************** BUTTONS *************/

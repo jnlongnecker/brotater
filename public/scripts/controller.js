@@ -49,6 +49,7 @@ function displayNewSaveData(result) {
     populateUnpicked();
     showCurrTater();
     showButtons();
+    highlightSelectedTater();
     sendData();
 }
 
@@ -57,6 +58,7 @@ function populateUnpicked() {
     clearChildren(unpickedGrid);
     for (tatoName of data.remaining) {
         let token = createTatoToken(tatoName);
+        addClickable(token);
         unpickedGrid.appendChild(token);
     }
 }
@@ -80,12 +82,11 @@ function showCurrTater() {
 
 // Utility function to handle which buttons should be displayed
 function showButtons() {
+    randomBtn.classList.remove("hide");
     if (!data.current) {
-        randomBtn.classList.remove("hide");
         winBtn.classList.add("hide");
         loseBtn.classList.add("hide");
     } else {
-        randomBtn.classList.add("hide");
         winBtn.classList.remove("hide");
         loseBtn.classList.remove("hide");
     }
@@ -206,6 +207,7 @@ function playRouletteAnim(pick, turns = 0) {
     // If we're at the end, we've landed on the right tater and can reveal the buttons
     if (turns == MAX_TURNS) {
         showButtons();
+        highlightSelectedTater();
         return;
     }
 
@@ -226,4 +228,48 @@ function sendData() {
         },
         body: JSON.stringify(data)
     });
+}
+
+// Holds the last selected token
+let lastToken;
+
+// Event handler. Handle the toggling of a selected tater
+function handleTokenClick(event) {
+
+    // Unselect tater if we clicked on the selected one
+    if (data.current == event.currentTarget.lastChild.innerText) {
+        data.current = '';
+        lastToken = undefined;
+        event.currentTarget.classList.remove("selected");
+    } else {
+        if (lastToken) lastToken.classList.remove("selected");
+        // Select it otherwise
+        lastToken = event.currentTarget;
+        let taterName = lastToken.lastChild.innerText;
+        lastToken.classList.add("selected");
+
+        data.current = taterName;
+    }
+
+    sendData();
+    showButtons();
+    showCurrTater();
+}
+
+// Utility function to find the selected tater token and highlight it
+function highlightSelectedTater() {
+    let taterName = data.current;
+    for (let token of document.querySelectorAll('.clickable')) {
+        if (token.lastChild.innerText == taterName) {
+            lastToken = token;
+            token.classList.add("selected");
+        }
+        else token.classList.remove("selected");
+    }
+}
+
+// Utility function to add click functionality to a node
+function addClickable(node) {
+    node.classList.add("clickable");
+    node.addEventListener("click", handleTokenClick);
 }
